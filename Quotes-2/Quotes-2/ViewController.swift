@@ -28,13 +28,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        UILabel.transition(with: label,
-                      duration: 0.25,
-                       options: .transitionCrossDissolve,
-                    animations: { [weak self] in
-            self?.label.text = (arc4random() % 2 == 0) ? "One" : "Two"
-                 }, completion: nil)
-        
         label.text = showAquote()
     }
 
